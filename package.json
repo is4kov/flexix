@@ -1,0 +1,18 @@
+{
+  "name": "flexbox-generator",
+  "version": "0.0.0",
+  "description": "Flexbox Generator",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "less": "~2.4.0"
+  },
+  "devDependencies": {
+    "less": "~2.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Yevhen Isakov",
+  "license": "BSD"
+}
