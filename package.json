@@ -4,10 +4,10 @@
   "description": "Flexbox Generator",
   "main": "Gruntfile.js",
   "dependencies": {
-    "less": "~2.4.0"
   },
   "devDependencies": {
-    "less": "~2.4.0"
+    "grunt": "~0.4.5",
+    "grunt-contrib-watch": "~0.6.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
