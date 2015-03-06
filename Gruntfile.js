@@ -6,17 +6,16 @@ module.exports = function(grunt) {
 
         less: {
             options: {
-                compress: false,
-                firebug: false,
-                use: [
+                compress: false
+              /*use: [
                     function() {
                         return require('autoprefixer-stylus')('last 3 version', 'ie >= 9');
                     }
-                ]
+                ]*/
             },
             global: {
                 files: {
-                    'main.css': 'main.styl'
+                    'main.css': 'main.less'
                 }
             }
         },
@@ -34,8 +33,7 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
-//    grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('less');
+    grunt.loadNpmTasks('grunt-contrib-less');
 
     grunt.registerTask('default', ['less','watch']);
 };

@@ -1,90 +1,90 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8"/>
-    <title>Flexbox Generator</title>
-
-    <link rel="stylesheet" href="normalize.css" />
-
-    <link rel="stylesheet/less" href="main.less" />
-    <script src="js/less.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+	<meta charset="utf-8"/>
+	<title>Flexbox Generator</title>
+	<link rel="stylesheet" href="normalize.css"/>
+	<link rel="stylesheet" href="main.css"/>
+	<!--<link rel="stylesheet/less" href="main.less"/>
+	<script src="js/less.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
-<div class="container">
-    <div class="options">
-        <div class="options-part">
-            <div class="options-item">
-                <div class="options-title">flex-direction</div>
-                <div class="options-main">
-                    <select class="options-select">
-                        <option value="row" selected>row</option>
-                        <option value="row-reverse">row-reverse</option>
-                        <option value="column">column</option>
-                        <option value="column-reverse">column-reverse</option>
-                    </select>
-                </div>
-            </div>
-            <div class="options-item">
-                <div class="options-title"># of items</div>
-                <div class="options-main">
-                    <button type="button" class="options-button">-</button>
-                    <button type="button" class="options-button">+</button>
-                </div>
-            </div>
-            <div class="options-item">
-                <div class="options-title">flex-wrap</div>
-                <div class="options-main">
-                    <select class="options-select">
-                        <option value="nowrap" selected>nowrap</option>
-                        <option value="wrap">wrap</option>
-                        <option value="wrap-reverse">wrap-reverse</option>
-                    </select>
-                </div>
-            </div>
-            <div class="options-item">
-                <div class="options-title">justify-content</div>
-                <div class="options-main">
-                    <select class="options-select">
-                        <option value="flex-start" selected>flex-start</option>
-                        <option value="flex-end">flex-end</option>
-                        <option value="center">center</option>
-                        <option value="space-between">space-between</option>
-                        <option value="space-around">space-around</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="options-part">
-            <div class="options-item">
-                <div class="options-title">flex-grow</div>
-                <div class="options-main"></div>
-            </div>
-            <div class="options-item">
-                <div class="options-title">align-self</div>
-                <div class="options-main"></div>
-            </div>
-            <div class="options-item">
-                <div class="options-title">align-items</div>
-                <div class="options-main"></div>
-            </div>
-            <div class="options-item">
-                <div class="options-title">order</div>
-                <div class="options-main"></div>
-            </div>
-        </div>
-    </div>
-    <div class="example">
-
-        <div class="flexbox-container" id="flexbox-container">
-            <div class="flexbox-item"></div>
-            <div class="flexbox-item"></div>
-            <div class="flexbox-item"></div>
-        </div>
-
-    </div>
+<div class="l-container">
+	<div class="l-options">
+		<div class="b-options">
+			<div class="b-options-part">
+				<div class="b-options-item">
+					<div class="b-options-title">flex-direction</div>
+					<div class="b-options-main">
+						<select class="b-options-select">
+							<option value="row" selected>row</option>
+							<option value="row-reverse">row-reverse</option>
+							<option value="column">column</option>
+							<option value="column-reverse">column-reverse</option>
+						</select>
+					</div>
+				</div>
+				<div class="b-options-item">
+					<div class="b-options-title"># of items</div>
+					<div class="b-options-main">
+						<button type="button" class="b-options-button">-</button>
+						<button type="button" class="b-options-button">+</button>
+					</div>
+				</div>
+				<div class="b-options-item">
+					<div class="b-options-title">flex-wrap</div>
+					<div class="b-options-main">
+						<select class="b-options-select">
+							<option value="nowrap" selected>nowrap</option>
+							<option value="wrap">wrap</option>
+							<option value="wrap-reverse">wrap-reverse</option>
+						</select>
+					</div>
+				</div>
+				<div class="b-options-item">
+					<div class="b-options-title">justify-content</div>
+					<div class="b-options-main">
+						<select class="b-options-select">
+							<option value="flex-start" selected>flex-start</option>
+							<option value="flex-end">flex-end</option>
+							<option value="center">center</option>
+							<option value="space-between">space-between</option>
+							<option value="space-around">space-around</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="b-options-part">
+				<div class="b-options-item">
+					<div class="b-options-title">flex-grow</div>
+					<div class="b-options-main"></div>
+				</div>
+				<div class="b-options-item">
+					<div class="b-options-title">align-self</div>
+					<div class="b-options-main"></div>
+				</div>
+				<div class="b-options-item">
+					<div class="b-options-title">align-items</div>
+					<div class="b-options-main"></div>
+				</div>
+				<div class="b-options-item">
+					<div class="b-options-title">order</div>
+					<div class="b-options-main"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-example">
+		<div class="flexbox-container" id="flexbox-container">
+			<div class="flexbox-item"></div>
+			<div class="flexbox-item"></div>
+			<div class="flexbox-item"></div>
+		</div>
+	</div>
 </div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
 </html>

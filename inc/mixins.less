@@ -23,16 +23,16 @@
   }`;
 
   @font-face {
-	font-family: '`(@{fontFamily})(@{font})`';
-	src: url('@{font-path}@{fontName}.eot');
-	src: local(@font),
-	url('@{font-path}@{fontName}.eot?#iefix')  format('embedded-opentype'),
-	url('@{font-path}@{fontName}.woff')        format('woff'),
-	url('@{font-path}@{fontName}.ttf')         format('truetype'),
-	url('@{font-path}@{fontName}.svg#@{font}') format('svg');
-	font-weight: ~'`(@{fontWeight})(@{font})`';
-	font-style: ~'`(@{fontStyle})(@{font})`';
-	}
+    font-family: '`(@{fontFamily})(@{font})`';
+    src: url('@{font-path}@{fontName}.eot');
+    src: local(@font),
+    url('@{font-path}@{fontName}.eot?#iefix')  format('embedded-opentype'),
+    url('@{font-path}@{fontName}.woff')        format('woff'),
+    url('@{font-path}@{fontName}.ttf')         format('truetype'),
+    url('@{font-path}@{fontName}.svg#@{font}') format('svg');
+    font-weight: ~'`(@{fontWeight})(@{font})`';
+    font-style: ~'`(@{fontStyle})(@{font})`';
+    }
   }
 
 // End of
@@ -224,3 +224,18 @@
   -webkit-align-content: ~'@{rule}';
           align-content: ~'@{rule}';
   }
+
+// clearfix
+
+.clearfix() {
+
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+
+  .lt-ie8 & {
+    zoom: 1;
+  }
+}
