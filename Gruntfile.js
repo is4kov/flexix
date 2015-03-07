@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
         less: {
             options: {
-                compress: false
+                compress: true
               /*use: [
                     function() {
                         return require('autoprefixer-stylus')('last 3 version', 'ie >= 9');
