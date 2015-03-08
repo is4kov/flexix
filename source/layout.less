@@ -1,12 +1,21 @@
+@container-padding: 20px;
+
+@example-border-width: 1px;
+
 .l-container {
-  padding: 20px;
+  height: calc(~'100vh - 2 * @{container-padding}');
+  padding: @container-padding;
   }
 
 .l-options {
   float: left;
   width: 30%;
+  height: 100%;
   margin-right: 2%;
   }
 
 .l-example {
+  overflow: hidden;
+  height: calc(~'100vh - (2 * @{example-border-width} + 2 * @{container-padding})');
+  border: @example-border-width solid @gray;
   }

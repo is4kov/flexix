@@ -1,0 +1,21 @@
+@example-item-padding-vertical: 10px;
+@example-item-padding-horizontal: 20px;
+@example-item-background: fadein(yellow, 25%);
+@example-item-color: #1561d9;
+
+.example {
+
+  &-container {
+	height: 100%;
+	display: flex;
+	flex: 1 0 auto;
+	}
+
+  &-item {
+	display: inline-flex;
+	padding: @example-item-padding-vertical @example-item-padding-horizontal;
+	justify-content: center;
+	background: @example-item-background;
+	color: @example-item-color;
+	}
+  }
