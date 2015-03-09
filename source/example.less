@@ -1,5 +1,8 @@
+@example-item-margin: 6px;
 @example-item-padding-vertical: 10px;
 @example-item-padding-horizontal: 20px;
+@example-item-border-width: 1px;
+@example-item-border-color: #333;
 @example-item-background: fadein(yellow, 25%);
 @example-item-color: #1561d9;
 
@@ -9,11 +12,14 @@
 	height: 100%;
 	display: flex;
 	flex: 1 0 auto;
+
 	}
 
   &-item {
 	display: inline-flex;
+//	margin: @example-item-margin;
 	padding: @example-item-padding-vertical @example-item-padding-horizontal;
+	border: @example-item-border-width solid @example-item-border-color;
 	justify-content: center;
 	background: @example-item-background;
 	color: @example-item-color;

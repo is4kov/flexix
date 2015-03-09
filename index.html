@@ -15,6 +15,13 @@
 	<div class="l-options">
 		<div class="b-options">
 			<div class="b-options-part">
+                <div class="b-options-item">
+                    <div class="b-options-title"># of items</div>
+                    <div class="b-options-main">
+                        <button type="button" class="b-options-button">-</button>
+                        <button type="button" class="b-options-button">+</button>
+                    </div>
+                </div>
 				<div class="b-options-item">
 					<div class="b-options-title">flex-direction</div>
 					<div class="b-options-main">
@@ -24,13 +31,6 @@
 							<option value="column">column</option>
 							<option value="column-reverse">column-reverse</option>
 						</select>
-					</div>
-				</div>
-				<div class="b-options-item">
-					<div class="b-options-title"># of items</div>
-					<div class="b-options-main">
-						<button type="button" class="b-options-button">-</button>
-						<button type="button" class="b-options-button">+</button>
 					</div>
 				</div>
 				<div class="b-options-item">
@@ -67,11 +67,34 @@
 				</div>
 				<div class="b-options-item">
 					<div class="b-options-title">align-items</div>
-					<div class="b-options-main"></div>
+					<div class="b-options-main">
+                        <select class="b-options-select">
+                            <option value="stretch" selected>stretch</option>
+                            <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                            <option value="center">center</option>
+                            <option value="baseline">baseline</option>
+                        </select>
+					</div>
 				</div>
+                <div class="b-options-item">
+                    <div class="b-options-title">align-content</div>
+                    <div class="b-options-main">
+                        <select class="b-options-select">
+                            <option value="stretch">stretch</option>
+                            <option value="flex-start">flex-start</option>
+                            <option value="flex-end">flex-end</option>
+                            <option value="center">center</option>
+                            <option value="space-between">space-between</option>
+                            <option value="space-around">space-around</option>
+                        </select>
+                    </div>
+                </div>
 				<div class="b-options-item">
 					<div class="b-options-title">order</div>
-					<div class="b-options-main"></div>
+					<div class="b-options-main">
+                        <input class="b-options-input" type="text" placeholder="0" />
+					</div>
 				</div>
 			</div>
 		</div>
