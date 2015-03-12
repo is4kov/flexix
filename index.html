@@ -59,11 +59,27 @@
 			<div class="b-options-part">
 				<div class="b-options-item">
 					<div class="b-options-title">flex-grow</div>
-					<div class="b-options-main"></div>
+					<div class="b-options-main">
+						<input type="range" />
+					</div>
+				</div>
+				<div class="b-options-item">
+					<div class="b-options-title">flex-basis</div>
+					<div class="b-options-main">
+						<input type="text" class="b-options-input" placeholder="auto" value="" />
+					</div>
 				</div>
 				<div class="b-options-item">
 					<div class="b-options-title">align-self</div>
-					<div class="b-options-main"></div>
+					<div class="b-options-main">
+						<select class="b-options-select">
+							<option value="stretch" selected>stretch</option>
+							<option value="flex-start">flex-start</option>
+							<option value="flex-end">flex-end</option>
+							<option value="center">center</option>
+							<option value="baseline">baseline</option>
+						</select>
+					</div>
 				</div>
 				<div class="b-options-item">
 					<div class="b-options-title">align-items</div>
@@ -93,7 +109,7 @@
 				<div class="b-options-item">
 					<div class="b-options-title">order</div>
 					<div class="b-options-main">
-                        <input class="b-options-input" type="text" placeholder="0" />
+                        <input class="b-options-input" type="text" placeholder="0" value="" />
 					</div>
 				</div>
 			</div>
