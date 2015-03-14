@@ -1,15 +1,24 @@
 .b-options {
 
-  &-part {
-	margin: 10px 0;
-	padding: 20px;
-	border: 1px solid @gray;
+	&-part {
+		margin: 10px 0;
+		padding: 20px;
+		border: 1px solid @gray;
 
-	&:first-child {
-	  margin-top: 0;
-	  }
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 
-  &-item {
+	&-item {
 	}
-  }
+
+	&-select,
+	&-input {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 2px 4px;
+		border: 1px solid @gray;
+		font-family: @font-default;
+	}
+}
