@@ -11,6 +11,34 @@
 	}
 
 	&-item {
+
+		&_small {
+			float: left;
+			width: 50%;
+			box-sizing: border-box;
+		}
+
+		&_fluid {}
+
+		& + & {
+			margin-top: 12px;
+		}
+	}
+
+	&-item_fluid &-title,
+	&-item_fluid &-main {
+		display: inline-block;
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+
+	&-item_fluid &-main {
+		margin-left: 20px;
+	}
+
+	&-title {
+		font-size: 1.2em;
+		margin-bottom: 8px;
 	}
 
 	&-select,
@@ -20,5 +48,18 @@
 		padding: 2px 4px;
 		border: 1px solid @gray;
 		font-family: @font-default;
+	}
+
+	&-button {
+		display: inline-block;
+		width: 80px;
+		padding: 5px 0;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 2em;
+
+		& + & {
+			margin-left: 10px;
+		}
 	}
 }

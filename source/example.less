@@ -4,24 +4,37 @@
 @example-item-border-width: 1px;
 @example-item-border-color: #333;
 @example-item-background: fadein(yellow, 25%);
-@example-item-color: #1561d9;
+@example-item-color: #444;
+
+@example-item-focused-background: lighten(@example-item-background, 25%);
+@example-item-focused-color: #888;
 
 .example {
 
-  &-container {
-	height: 100%;
-	display: flex;
-	flex: 1 0 auto;
+	&-container {
+		height: 100%;
+		display: flex;
+		flex: 1 0 auto;
 
+		overflow-y: hidden;
+		overflow-x: scroll;
 	}
 
-  &-item {
-	display: inline-flex;
-//	margin: @example-item-margin;
-	padding: @example-item-padding-vertical @example-item-padding-horizontal;
-	border: @example-item-border-width solid @example-item-border-color;
-	justify-content: center;
-	background: @example-item-background;
-	color: @example-item-color;
+	&-item {
+		transition: all linear .2s;
+		display: inline-flex;
+		margin: @example-item-margin;
+		padding: @example-item-padding-vertical @example-item-padding-horizontal;
+		border: @example-item-border-width solid @example-item-border-color;
+		//	justify-content: center;
+		background: @example-item-background;
+		font-family: Georgia;
+		font-size: 16px;
+		color: @example-item-color;
+
+		&:focus {
+			background: @example-item-focused-background;
+			color: @example-item-focused-color;
+		}
 	}
-  }
+}
