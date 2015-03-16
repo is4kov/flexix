@@ -6,16 +6,26 @@ module.exports = function(grunt) {
 
         less: {
             options: {
-                compress: true
-              /*use: [
-                    function() {
-                        return require('autoprefixer-stylus')('last 3 version', 'ie >= 9');
-                    }
-                ]*/
+                compress: false,
+                sourceMap: true,
+                sourceMapFilename: 'sourcemaps/main.map'
             },
+
             global: {
                 files: {
                     'main.css': 'main.less'
+                }
+            }
+        },
+
+        autoprefixer: {
+            global: {
+                options: {
+                    browsers: ['last 3 versions', 'ie 9']
+                },
+                files: {
+                    src: 'main.css',
+                    dist: 'main.css'
                 }
             }
         },
@@ -26,7 +36,7 @@ module.exports = function(grunt) {
                     'inc/*.less',
                     'source/*.less'
                 ],
-                tasks: ['less:global']
+                tasks: ['less', 'autoprefixer']
             }
         }
 
@@ -34,6 +44,7 @@ module.exports = function(grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
-    grunt.registerTask('default', ['less','watch']);
+    grunt.registerTask('default', ['less', 'watch', 'autoprefixer']);
 };
