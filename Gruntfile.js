@@ -23,10 +23,8 @@ module.exports = function(grunt) {
                 options: {
                     browsers: ['last 3 versions', 'ie 9']
                 },
-                files: {
-                    src: 'main.css',
-                    dist: 'main.css'
-                }
+                src: 'main.css',
+                dest: 'main.css'
             }
         },
 
@@ -36,7 +34,7 @@ module.exports = function(grunt) {
                     'inc/*.less',
                     'source/*.less'
                 ],
-                tasks: ['less', 'autoprefixer']
+                tasks: ['less', 'autoprefixer:global']
             }
         }
 
@@ -46,5 +44,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-autoprefixer');
 
-    grunt.registerTask('default', ['less', 'watch', 'autoprefixer']);
+    grunt.registerTask('default', ['less', 'watch', 'autoprefixer:global']);
 };
