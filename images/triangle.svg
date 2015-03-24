@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="triangle" sketch:type="MSArtboardGroup" fill="#4CDDAA">
+            <polygon id="Triangle-1" sketch:type="MSShapeGroup" transform="translate(12.000000, 12.500000) scale(1, -1) translate(-12.000000, -12.500000) " points="12 9 16 16 8 16 "></polygon>
+        </g>
+    </g>
+</svg>
