@@ -1,22 +1,30 @@
-@example-item-margin: 6px;
+//@example-item-margin: 6px;
+@example-item-margin: 4px;
 @example-item-padding-vertical: 10px;
 @example-item-padding-horizontal: 20px;
 @example-item-border-width: 1px;
-@example-item-border-color: #ccc;
-@example-item-background: fadein(yellow, 50%);
-@example-item-color: #444;
+//@example-item-border-color: #ccc;
+@example-item-border-color: #3db086;
+//@example-item-background: fadein(yellow, 50%);
+@example-item-background: #56daa7;
+//@example-item-color: #444;
+@example-item-color: @black;
 
-@example-item-focused-background: lighten(@example-item-background, 25%);
+//@example-item-focused-background: lighten(@example-item-background, 25%);
+@example-item-focused-background: #5df2b8;
 @example-item-focused-color: #888;
+
+//@example-container-padding: 5px;
+@example-container-padding: 16px;
 
 .example {
 
 	&-container {
-		height: calc(~'100% - 10px');
+		height: calc(~'100% - 2 * @{example-container-padding}');
 		display: flex;
 		flex: 1 0 auto;
 
-		padding: 5px;
+		padding: @example-container-padding;
 		overflow-y: hidden;
 		overflow-x: scroll;
 	}
@@ -27,14 +35,19 @@
 		margin: @example-item-margin;
 		padding: @example-item-padding-vertical @example-item-padding-horizontal;
 		border: @example-item-border-width solid @example-item-border-color;
+		border-radius: 2px;
 		//	justify-content: center;
 		background: @example-item-background;
+		outline: none;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 		font-family: Georgia;
 		font-size: 16px;
 		color: @example-item-color;
 
 		&:focus {
 			background: @example-item-focused-background;
+			box-shadow: 0 5px 10px rgba(0, 0, 0, .2),
+									0 1px 2px  rgba(0, 0, 0, .3);
 			color: @example-item-focused-color;
 		}
 	}

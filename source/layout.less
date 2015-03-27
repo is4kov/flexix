@@ -9,13 +9,18 @@
 
 .l-options {
   float: left;
-  width: 26%;
+//  width: 26%;
+  width: 256px;
   height: 100%;
-  margin-right: 10px;
+  overflow-y: scroll;
+//  margin-right: 10px;
+  background: #354051;
   }
 
 .l-example {
   overflow: hidden;
   height: calc(~'100vh - (2 * @{example-border-width} + 2 * @{container-padding})');
-  border: @example-border-width solid @gray;
+//  height: 100vh;
+//  border: @example-border-width solid @gray;
+  background: @white;
   }
