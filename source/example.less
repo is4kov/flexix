@@ -2,8 +2,8 @@
 @example-item-padding-vertical: 10px;
 @example-item-padding-horizontal: 20px;
 @example-item-border-width: 1px;
-@example-item-border-color: #ccc;
-@example-item-background: fadein(yellow, 50%);
+@example-item-border-color: #333;
+@example-item-background: fadein(yellow, 25%);
 @example-item-color: #444;
 
 @example-item-focused-background: lighten(@example-item-background, 25%);
@@ -12,11 +12,10 @@
 .example {
 
 	&-container {
-		height: calc(~'100% - 10px');
+		height: 100%;
 		display: flex;
 		flex: 1 0 auto;
 
-		padding: 5px;
 		overflow-y: hidden;
 		overflow-x: scroll;
 	}
